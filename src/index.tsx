@@ -1,14 +1,16 @@
+import 'react-native-gesture-handler';
 import React from 'react';
-import { View } from 'react-native';
+import { View, StatusBar } from 'react-native';
 
-import ProductsList from './pages/ProductsList';
-import ShoppingCart from './pages/ShoppingCart';
-import PageFooter from './components/PageFooter';
+import Routes from './routes';
+import AppContainer from './hooks';
 
 const App: React.FC = () => (
-  <View style={{ flex: 1 }}>
-    <ShoppingCart />
-    <PageFooter />
+  <View style={{ backgroundColor: '#312e38', flex: 1 }}>
+    <AppContainer>
+      <StatusBar barStyle="light-content" backgroundColor="#312e38" />
+      <Routes />
+    </AppContainer>
   </View>
 );
 
