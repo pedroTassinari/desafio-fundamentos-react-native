@@ -1,6 +1,4 @@
-import { RevealFromBottomAndroid } from '@react-navigation/stack/lib/typescript/src/TransitionConfigs/TransitionPresets';
 import React from 'react';
-import { Text } from 'react-native';
 import Icon from 'react-native-vector-icons/Feather';
 import {
   Container,
